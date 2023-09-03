@@ -1,0 +1,126 @@
+:root {
+    --customGreen: #688e47;
+} 
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+    padding: 1em 3em;
+    background-color: transparent;
+    z-index: 15;
+}
+
+.navbar i {
+    display: none;
+    font-size: 2em;
+    margin: auto;
+}
+
+.nav-item {
+    margin: 0 2em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bannerContainer {
+    width: 100%;
+    position: relative;
+}
+
+.bannerContainer nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.bannerContent {
+    position: relative;
+}
+
+.bannerContainer .bannerContent img {
+    width: 100%;
+}
+
+.bannerText {
+    position: absolute;
+    right: 9em;
+    top: 10em;
+    width: 30em;
+}
+
+@media only screen and (max-width:1000px) and (min-width: 631px) {
+    .bannerContent {
+        position: initial;
+        width: 100%;
+        padding: 5em 0;
+    }
+
+    .bannerContent img {
+        display: none;
+    }
+
+    .bannerText {
+        position: initial;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:630px) {
+    .bannerContent {
+        position: initial;
+        width: 100%;
+        padding: 5em 1em;
+    }
+
+    .bannerContent img {
+        display: none;
+    }
+
+    .bannerText {
+        position: initial;
+        width: 100%;
+    }
+
+    .navbar .nav-item {
+        display: none;
+    }
+
+    .navbar i {
+        display: initial;
+    }
+}
+
+.bannerText h1 {
+    font-size: 4em;
+}
+
+.bannerText p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    color: #a8a8a8;
+}
+
+
+button {
+    background-color: var(--customGreen);
+    border: none;
+    color: white;
+    padding: 0.4em 2.5em;
+    border-radius: 0.3em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+}
+
+.shoppingButton {
+    background-color: transparent;
+    padding: 0 3em;
+    border-radius: 0.3em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    border: 0.2em solid var(--customGreen);
+}
+
+.shoppingButton a {
+    color: var(--customGreen);
+}
